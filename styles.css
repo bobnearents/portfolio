@@ -1,51 +1,13 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   
 }
 
-li {
-  list-style-type: none;
-}
 
-html {
-  font-family: 'Poppins', sans-serif;
-}
 
-h1, h2 {
-  font-size:3.5em;
-  font-family: 'PT Serif', serif;
-  text-align: center;
-}
 
-h1 {
-  color:white;
-}
 
-h2 {
-  padding:80px;
-}
-
-.intro-container {
-  display: flex;
-  background: #363636;
-  flex-direction: column;
-  align-items: center;
-}
-
-.intro-container * {
-  margin-top: 110px;
-}
-
-.call-to-action {
-  border:1px solid #e1c766;
-  border-radius:50px;
-  background:#e1c766;
-  font-size:1.5em;
-  width:200px;
-  height:60px;
-  margin-bottom:200px;
-}
 
 .about-container {
   background:#f0e3b2;
@@ -93,8 +55,125 @@ h2 {
   text-decoration: none;
 }
 
+
+
+
+
+
+
+ */
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  color:#363636;
+}
+
+li {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+.container {
+  padding:10vh 0;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+ }
+
+.intro h1 p {
+   margin:0;
+   transition: all 5000ms;
+ }
+
+h1, h2 {
+  font-size:3.5em;
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+
+h1 {
+  color:white;
+}
+
+.call-to-action {
+  border:1px solid #e1c766;
+  border-radius:50px;
+  background:#e1c766;
+  font-size:1.5em;
+  width:200px;
+  height:60px;
+}
+
+.intro {
+  height:100vh;
+  background: #363636;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-container {
+  color:white;
+  padding:10vh 30vw;
+  background:#363636;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-container h2 {
+  align-self: center;
+  margin-bottom:5vh;
+}
+
+.about-container p {
+  font-size: 1.2em;
+}
+
+.projects {
+  background:#f0e3b2;
+} 
+
+h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 2em;
+  margin:20px;
+}
+
+.projects img {
+  margin:20px 0;
+  border-radius:20px;
+  box-shadow: -3px 3px 5px #363636;
+}
+
+.projects img:hover {
+  opacity:.5;
+  transition: opacity 300ms;
+}
+
+.projects ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projects ol ul{
+  width:40%;
+  min-width: 350px;
+  margin:6vh 2vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
-    padding:40px 0 10px;
+    padding:10px 0;
     font-size:.8em;
     margin:auto;
     text-align:center;
@@ -105,13 +184,18 @@ footer {
   color:#363636;
 }
 
-
 footer #social-media {
     font-size:1.8em;
-    margin:20px;
+    margin:0 20px;
 }
 
 #social-media i {
     margin:0 10px;
 }
 
+@media only screen and (max-width: 800px) {
+  
+  .about-container {
+    padding:10vh 10vw;
+  }
+}
